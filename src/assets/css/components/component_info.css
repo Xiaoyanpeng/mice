@@ -1,0 +1,12 @@
+.main-info {
+    width: 976px;
+    background: #f4f4f4;
+	padding: 0 20px;
+}
+.main-info p {
+    font-size: 12px;
+}
+.info-title {
+    font-size: 30px !important;
+    padding: 10px 0;
+}

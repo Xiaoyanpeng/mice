@@ -1,0 +1,183 @@
+@import '../common.less';
+
+.mh-nav{
+    width: 964px;
+    height: 334px;
+    .booking-query{
+        background-color: #fff;
+        border: solid 1px #e4e4e4;
+        box-shadow: 0px 0px 3px #eee;
+        .hotel-booking{
+            height: 48px;
+            background-color: #f4f4f4;
+            li{
+                .fl;
+                width:168px;
+                .middle(48px);
+                .font(16px;#373737);
+                &.active{
+                    color:@color-red;
+                    background-color: #fff;
+                }
+            }
+        }
+        .title{
+            font-weight: bold;
+            margin: 17px 25px 30px 25px;
+            padding-bottom: 17px;
+            border-bottom: solid 1px #e2e2e2;
+        }
+        .list{
+            padding-left: 28px;
+            padding-right: 30px;
+            li{
+                .fl;
+                height: 34px;
+                margin-bottom: 22px;
+                margin-right: 40px;
+               .name{
+                   .fl;
+                   width: 84px;
+                   height: 34px;
+                   line-height: 34px;
+                   text-align: right;
+                   padding-right: 10px;
+                   .font(12px;#999);
+               } 
+               .text{
+                   .fl;
+                   width: 166px;
+                   .radio{
+                       border-radius: 5px;
+                       height: 34px;
+                       line-height: 34px;
+                       .font(14px;#373737);
+                   }
+                   .el-date-editor.el-input{
+                       width: 166px;
+                   }
+                   .el-input__inner{
+                       width: 166px;
+                       border: solid 1px #ccc;
+                       border-radius: 5px;
+                   }
+                   .el-input__inner:focus{
+                        background-color: #fefffe;
+                        border-color: #3bb4f2;
+                        outline: 0;
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+                   }
+                   .el-input__icon{
+                       color: #ccc;
+                   }
+               }
+               &:nth-child(1) .text{
+                    width: 196px;
+               }
+               &:nth-child(4) .text{
+                    width: 196px;
+               }
+            }
+        }
+        .query{
+            width: 320px;
+            border-radius: 5px;
+            height: 34px;
+            .placeholder;
+            .font(14px);
+        }
+        .notice{
+            .fr;
+            .font(12px;#999);
+            line-height: 34px;
+            margin-right: 17px;
+        }
+        .bttn{
+            .btton(110px;34px);.fr;
+            margin-right: 45px;
+        }
+    }
+}
+.message-list{
+    width: 964px;
+    background-color: #fff;
+    border: solid 1px #e4e4e4;
+    box-shadow: 0px 0px 3px #eee;
+    padding: 20px;
+    .small-tit{
+        .font(12px;#bbb);
+    }
+    .tables{
+        .el-table th{
+            background-color: #f8f8f8;
+        }
+        .el-table__header-wrapper thead div{
+            background-color: #f8f8f8;
+        }
+        .el-table--striped .el-table__body tr:nth-child(2n) td{
+            background-color: #f0f0f0;
+        }
+        .el-table td{
+            height: 84px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .el-table th{
+            height: 40px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .el-table .cell, .el-table th>div{
+            padding-left: 0px;
+            padding-right: 0px;
+            color: #999;
+        }
+        .el-table td, .el-table th.is-leaf{
+            border-color:#e2e2e2;
+        }
+        .slideLeft{
+            line-height: 20px;
+        }
+        .gray{
+            color: #999;
+        }
+        .green{
+            color:#2a925d;
+        }
+        .red{
+            color:#e83421;
+        }
+        .btngroup{
+            line-height: 20px;
+            a{
+                color: #108cdb;
+                &:hover{
+                    color: #e83421;
+                }
+            }
+            
+        }
+    }
+    .pagination{
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        .el-pager li.active{
+            border-color: #e83421;
+            background-color: #e83421;
+        }
+        .el-pager li:hover{
+            color: #e83421;
+        }
+        .el-pager li.active:hover{
+            color: #fff;
+        }
+        .el-pagination button:hover{
+            color: #e83421;
+        }
+        .el-pagination button.disabled:hover{
+            color: #e4e4e4;
+        }
+    }
+}

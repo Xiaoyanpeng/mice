@@ -1,0 +1,145 @@
+
+//自定义class
+@color-red:#e83421;
+@color-black:#373737;
+@color-bg:#f2f2f2;
+.noselect{
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+.dot{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.moredot(@clamp:2){
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @clamp;
+    -webkit-box-orient: vertical;
+}
+.position-up(@position;@top;@left){
+    position: @position;
+    top:@top;
+    left:@left;
+}
+.position-down(@position;@top;@right){
+    position: @position;
+    top:@top;
+    right:@right;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.block{
+    display: block;
+}
+.ib{
+    display: inline-block;
+}
+.cur(@cursor:pointer){
+    cursor: @cursor;
+}
+.vertical{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.font(@size:14px;@color:@color-black;){
+    font-size: @size;
+    color:@color;
+}
+.bgimage(@url;@posi:center;@bgsize:contain;){
+    background: url(@url) no-repeat;
+    background-size: @bgsize;
+    background-position: @posi
+}
+.round(@w;@bco:@color-red;@color:#fff;){
+    width: @w;
+    height: @w;
+    border-radius: 50%;
+    background-color: @bco;
+    color:@color;
+}
+.middle(@h){
+    height: @h;
+    line-height: @h;
+    text-align: center;
+}
+.clear{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.btton(@width;@height;@bgcolor:@color-red;@color:white;@size:14px;@radius:5px;){
+    width:@width;
+    height:@height;
+    line-height: @height;
+    text-align: center;
+    border-radius:@radius;
+    .noselect;
+    cursor: pointer;
+    background-color: @bgcolor;
+    color:@color;
+    font-size: @size;
+}
+.placeholder(@fontsize:12px;@fontcolor:#999;@left:0px;@align:left;@fontweight:normal;){
+    &::-webkit-input-placeholder{
+        font-size:@fontsize;
+        font-weight: @fontweight;
+        color:@fontcolor;
+        text-align: @align;
+        padding-left: @left;
+    }
+    &::-moz-placeholder{
+        font-size:@fontsize;
+        font-weight: @fontweight;
+        color:@fontcolor;
+        text-align: @align;
+        padding-left: @left;
+    }
+    &:-moz-placeholder{
+        font-size:@fontsize;
+        font-weight: @fontweight;
+        color:@fontcolor;
+        text-align: @align;
+        padding-left: @left;
+    }
+    &:-ms-input-placeholder{
+        font-size:@fontsize;
+        font-weight: @fontweight;
+        color:@fontcolor;
+        text-align: @align;
+        padding-left: @left;
+    }
+}
+
+
+

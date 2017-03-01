@@ -1,0 +1,153 @@
+@import '../common.less';
+
+.main-hotel{
+    width: 964px;
+    .hotel-booking{
+        height: 48px;
+        .position-up(relative;1px;0px);
+        li{
+            .fl;
+            border-left: solid 1px #e4e4e4;
+            border-top: solid 1px #e4e4e4;
+            border-right: solid 1px #e4e4e4;
+            width:136px;
+            .middle(48px);
+            background-color: #d7d7d7;
+            .font(16px;#fff);
+            &.active{
+                color:@color-red;
+                background-color: #fff;
+            }
+        }
+    }
+    .hotel-query{
+        width: 964px;
+        height: 818px;
+        border: solid 1px #e4e4e4;
+        box-shadow: 0px 0px 3px #eee;
+        padding: 30px 30px 0px 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .bgimage('../images/main/city.png';bottom center);
+        background-color: #fff;
+        .form-list{
+            li{
+                .fl;
+                margin-bottom: 18px;
+                .name{
+                    .font(14px;#666);
+                    margin-bottom: 4px;
+                }
+                .text{
+                    .beaty{
+                        width: 435px;
+                        height: 40px;
+                        border-radius: 4px;
+                    }
+                    .el-date-editor.el-input{
+                       width: 435px;
+                    }
+                    .el-input__inner{
+                        width: 435px;
+                    }
+                }
+                .el-input__inner{
+                    height: 40px;
+                    border: solid 1px #ccc;
+                    border-radius: 4px;
+                }
+                .el-input__inner:focus{
+                    background-color: #fefffe;
+                    border-color: #3bb4f2;
+                    outline: 0;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+                }
+                .el-input__icon{
+                    color: #ccc;
+                }
+                &:nth-child(1){
+                    margin-right: 30px;
+                }
+                &:nth-child(3){
+                    margin-right: 30px;
+                }
+            }
+        }
+        .form-list:after{.clear;}
+        .two-sec{
+            li{
+                .fl;
+                margin-bottom: 18px;
+                .name{
+                    .font(14px;#666);
+                    margin-bottom: 4px;
+                }
+                .people{
+                    .el-date-editor.el-input{
+                       width: 133px;
+                    }
+                    .el-input__inner{
+                        width: 133px;
+                    }
+                }
+                .state{
+                    .el-date-editor.el-input{
+                       width: 208px;
+                    }
+                    .el-input__inner{
+                        width: 208px;
+                    }
+                }
+                .el-input__inner{
+                    height: 40px;
+                    border: solid 1px #ccc;
+                    border-radius: 4px;
+                }
+                .el-input__inner:focus{
+                    background-color: #fefffe;
+                    border-color: #3bb4f2;
+                    outline: 0;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+                }
+                .el-input__icon{
+                    color: #ccc;
+                }
+                &:nth-child(1){
+                    margin-right: 18px;
+                }
+                &:nth-child(2){
+                    margin-right: 18px;
+                }
+                &:nth-child(3){
+                    margin-right: 30px;
+                }
+                &:nth-child(4){
+                    margin-right: 19px;
+                }
+                input{
+                    .placeholder;
+                }
+            }
+            .notice{
+                .font(12px;#999);
+            }
+        }
+        .button{
+            margin-top: 10px;
+            height: 48px;
+            .super-search{
+                .fl;.cur;
+                .font(14px;#373737);
+                height: 48px;
+                line-height: 48px;
+            }
+            .bttn{
+                .fr;
+                .btton(156px;48px);
+                font-size: 16px;
+            }
+        }
+    }
+}

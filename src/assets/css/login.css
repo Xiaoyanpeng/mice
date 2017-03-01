@@ -1,0 +1,246 @@
+.log-body {
+  width: 100%;
+  background: url('../images/login/baci.jpg') repeat;
+  padding-top: 16vh;
+}
+.log-main {
+  width: 1200px;
+  height: 540px;
+  margin: 0 auto;
+}
+.log-sec-left {
+  width: 840px;
+  float: left;
+  height: 540px;
+  padding-left: 35px;
+  position: relative;
+  background:url('../images/login/login-bg.jpg') no-repeat;
+}
+.log-sec-left .logo {
+  width: 151px;
+  height: 60px;
+  background: url('../images/login/logo-2.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 35px;
+}
+.log-sec-left .m1 {
+  width: 61px;
+  height: 88px;
+  background: url('../images/login/M1.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.log-sec-left .text {
+  margin: 50px 0;
+}
+.log-sec-left .text p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.log-sec-left .text p:nth-child(1) {
+  font-size: 36px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.log-sec-left .text p:nth-child(2) {
+  margin-bottom: 10px;
+}
+.log-sec-left .bttn {
+  width: 195px;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 30px;
+  display: block;
+  border: dashed 2px #fff;
+  line-height: 58px;
+}
+.log-sec-right {
+  width: 360px;
+  height: 540px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  float: left;
+}
+.log-sec-right .m2 {
+  width: 63px;
+  height: 88px;
+  background: url('../images/login/M2.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.log-sec-right .title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #373737;
+  padding: 40px 0 0px 60px;
+}
+.log-sec-right .tit-en {
+  font-size: 14px;
+  font-weight: bold;
+  color: #cccccc;
+  padding-left: 95px;
+  margin-bottom: 50px;
+}
+.log-sec-right .log-form {
+  padding: 0 30px;
+  position: relative;
+}
+.log-sec-right .log-form .log-one {
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 16px;
+  position: relative;
+}
+.log-sec-right .log-form .log-one label {
+  width: 45px;
+  float: left;
+  height: 40px;
+}
+.log-sec-right .log-form .log-one label.user {
+  background: url('../images/login/user.png') no-repeat;
+  background-size: 14px 16px;
+  background-position: left 12px;
+}
+.log-sec-right .log-form .log-one label.pwd {
+  background: url('../images/login/password.png') no-repeat;
+  background-size: 14px 16px;
+  background-position: left 12px;
+}
+.log-sec-right .log-form .log-one label.safe {
+  background: url('../images/login/safe.png') no-repeat;
+  background-size: 14px 16px;
+  background-position: left 12px;
+}
+.log-sec-right .log-form .log-one input {
+  width: 255px;
+  float: left;
+  height: 40px;
+  border: none;
+  box-shadow: unset!important;
+}
+.log-sec-right .log-form .log-one input:focus {
+  box-shadow: unset!important;
+}
+.log-sec-right .log-form .log-one input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bbbbbb;
+  text-align: left;
+  padding-left: 50px;
+}
+.log-sec-right .log-form .log-one input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bbbbbb;
+  text-align: left;
+  padding-left: 50px;
+}
+.log-sec-right .log-form .log-one input:-moz-placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bbbbbb;
+  text-align: left;
+  padding-left: 50px;
+}
+.log-sec-right .log-form .log-one input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bbbbbb;
+  text-align: left;
+  padding-left: 50px;
+}
+.log-sec-right .log-form .log-one .code {
+  width: 53px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.log-check .el-checkbox__inner{
+  width: 16px;
+  height: 16px;
+}
+.log-check label{
+  font-weight: normal;
+  color: #666;
+}
+.log-check .el-checkbox__inner:hover{
+  border-color: #e83421;
+}
+.log-check .el-checkbox__input.is-checked .el-checkbox__inner{
+  border-color: #e83421;
+  background-color: #e83421;
+}
+.log-check .el-checkbox__input.is-focus .el-checkbox__inner{
+  border-color: #e83421;
+}
+.log-sec-right .log-form .log-button {
+  width: 100%;
+  height: 63px;
+  line-height: 63px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e83421;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 20px auto;
+}
+.log-sec-right .log-form .log-forget {
+  display: block;
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}
+.log-sec-right .log-form .log-forget:hover {
+  color: #e83421;
+}
+.log-shadow {
+  width: 1200px;
+  height: 95px;
+  margin: 0 auto;
+  background: url('../images/login/shadow.png') no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+.ms-foot {
+  height: 125px;
+  padding: 30px 0;
+  font-size: 12px;
+  font-weight: normal;
+  color: #bbbbbb;
+}
+.ms-foot .msg p {
+  line-height: 1.8;
+  text-align: center;
+}
+.ms-foot .msg p a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #bbbbbb;
+}
+.ms-foot .msg p a:hover {
+  color: #e83421;
+}
+.danger-color{
+  color: #e83421;
+}
+.log-error{
+  position: absolute;
+  bottom: 130px;
+  left: 30px;
+}

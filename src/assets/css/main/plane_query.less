@@ -1,0 +1,235 @@
+@import '../common.less';
+.el-input__inner{
+	border: solid 1px #ccc!important;
+}
+.el-input__inner:focus{
+	background-color: #fefffe;
+	border-color: #3bb4f2!important;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3);
+}
+.el-input__icon{
+	color: #ccc!important;
+}
+
+.plane_query_one{
+    width: 964px;
+    border: solid 1px #e4e4e4;
+    box-shadow: 0px 0px 3px #eee;
+    padding-top: 10px;
+    background-color: #fff;
+	margin-bottom: 20px;
+    .sec_one{
+		.title{
+			margin: 0 20px;
+			.font(18px);
+			line-height: 50px;
+			border-bottom:solid 1px #e2e2e2; 
+		}
+		.form-list{
+			padding:30px 20px 5px 0px;
+			li{
+				.fl;
+				margin-bottom:25px;
+				height: 34px;
+				.name{
+					.fl;
+					width: 93px;
+					line-height: 34px;
+					text-align: right;
+					padding-right: 10px;
+					.font(12px;#999);
+				}
+				.text{
+					.fl;
+					width: 176px;
+					input{
+						border-radius: 5px!important;
+						.placeholder;
+						width: 100%;
+					}
+					&.long{
+						.el-date-editor.el-input{
+							width: 309px;
+						}
+					}
+					&.small{
+						width: 136px;
+						.el-date-editor.el-input{
+							width: 136px;
+						}
+					}
+					&.xsmall{
+						width: 80px!important;
+					}
+				}
+			}
+			.btnquery{
+				.btton(113px;36px);
+				.fr;
+				margin-top: 2px;
+			}
+		}
+    }
+	.stuck-space{
+		height: 46px;
+	}
+    .sec_two{
+		width: 962px;
+		border-top: solid 1px #e4e4e4;
+		background-color: #fff;
+		z-index: 999;
+		.bookings{
+			li{
+				.fl;.cur;
+				.font(12px;#999);
+				margin-right: 40px;
+				line-height: 44px;
+				border-bottom:solid 2px transparent;
+				&.active{
+					border-bottom:solid 2px #e83421;
+					color:#373737;
+				}
+				&:hover{
+					border-bottom:solid 2px #e83421;
+				}
+				.red{
+					color:#e83421;
+				}
+				.green{
+					color:#2a925d;
+				}
+				.blue{
+					color:#108cdb;
+				}
+			}
+			.left{
+				.fl;.font(12px;#999);
+				line-height: 44px;
+				padding-left: 20px;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+.message-list{
+    width: 964px;
+    background-color: #fff;
+    border: solid 1px #e4e4e4;
+    box-shadow: 0px 0px 3px #eee;
+    padding: 20px;
+    .small-tit{
+        .font(12px;#bbb);
+    }
+    .tables{
+		color:#373737;
+		.copyBtn{
+			display: inline-block;
+			color: #373737;
+			margin-left: 5px;
+			&.active{
+				color:#ccc;
+			}
+		}
+		.cheap{
+			width: 50px;
+			height: 24px;
+			.font(12px;#fff);
+			background-color: #ed5d4d;
+			line-height: 24px;
+			.ib;
+			text-align: center;
+			border-radius: 4px;
+		}
+        .el-table th{
+            background-color: #f8f8f8;
+        }
+        .el-table__header-wrapper thead div{
+            background-color: #f8f8f8;
+        }
+        .el-table--striped .el-table__body tr:nth-child(2n) td{
+            background-color: #f0f0f0;
+        }
+        .el-table td{
+            height: 84px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .el-table th{
+            height: 40px;
+            font-size: 12px;
+            text-align: center;
+        }
+		.el-table .cell,.el-table th > div{
+			color:#666;
+		}
+        .el-table th>div{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .el-table td, .el-table th.is-leaf{
+            border-color:#e2e2e2;
+        }
+        .lineH{
+            line-height: 20px;
+        }
+        .gray{
+            color: #666;
+        }
+		.lightgray{
+			color:#999;
+		}
+        .green{
+            color:#2a925d;
+        }
+        .red{
+            color:#e83421;
+        }
+		.black{
+			color:#373737;
+		}
+		.blue{
+			color: #108cdb;
+		}
+        .btngroup{
+			&.paddingTop{
+				padding-top: 10px;
+			}
+			&.paddingBottom{
+				padding-bottom: 10px;
+			}
+            line-height: 20px;
+
+            a{
+                color: #108cdb;
+                &:hover{
+                    color: #e83421;
+                }
+            }
+            
+        }
+    }
+    .pagination{
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 15px;
+        .el-pager li.active{
+            border-color: #e83421;
+            background-color: #e83421;
+        }
+        .el-pager li:hover{
+            color: #e83421;
+        }
+        .el-pager li.active:hover{
+            color: #fff;
+        }
+        .el-pagination button:hover{
+            color: #e83421;
+        }
+        .el-pagination button.disabled:hover{
+            color: #e4e4e4;
+        }
+    }
+}

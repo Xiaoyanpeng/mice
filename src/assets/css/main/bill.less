@@ -1,0 +1,80 @@
+@import '../common.less';
+.bill-repay{
+    width: 964px;
+    height: 867px;
+    border: solid 1px #e4e4e4;
+    box-shadow: 0px 0px 3px #eee;
+    padding: 30px 30px 0px 30px;
+    background-color: #fff;
+    .font(18px);
+    padding: 20px 30px 0px 30px;
+    .title{
+        line-height: 50px;
+        border-bottom:solid 1px #e2e2e2; 
+    }
+    .nav{
+        margin-top: 34px;
+        border: solid 1px #e4e4e4;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 68px;
+        padding: 6px;
+        position: relative;
+        .text{
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            border: solid 1px #e4e4e4;
+            line-height: 50px;
+            padding-left: 97px;
+            .font(16px);
+            span{
+                color:#d31938;
+            }
+        }
+        .pic{
+            .position-up(absolute;-9px;7px);
+            width: 80px;
+            height: 69px;
+            .bgimage('../images/main/icon-money.png');
+        }
+    }
+    .small-title{
+        margin-top: 24px;
+        .font(14px);
+        margin-bottom: 6px;
+    }
+    .th-color th{
+        background-color: #108cdb;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        height: 36px;
+    }
+    .am-table>thead>tr>th{
+        border-bottom: none;
+    }
+    .td-color td{
+        text-align: center;
+        font-size: 12px;
+        &.gray{
+            color: #666;
+            a{
+                color: #666;
+                &:hover{
+                    color:#e83421;
+                }
+            }
+        }
+        &.red{
+            color: #d31938;
+        }
+        &.lightred{
+            color: #c836c3;
+        }
+        &.lightgray{
+            color: #999;
+        }
+        
+    }
+}

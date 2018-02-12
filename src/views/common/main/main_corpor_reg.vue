@@ -26,6 +26,7 @@
 					<li>3. 上传证件为带有最新工商局年检盖章的副本。</li>
 				</ul>
 			</div>
+		</div>
 	</section>
 </template>
 

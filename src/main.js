@@ -11,11 +11,11 @@ import messages from 'assets/js/zh_CN';
 //全局引入
 Vue.use(ElementUI)
 
-Validator.updateDictionary({
-    zh_CN: {
-        messages
-    }
-});
+// Validator.updateDictionary({
+//     zh_CN: {
+//         messages
+//     }
+// });
 const config = {
     errorBagName: 'errors', 
     delay: 0,
